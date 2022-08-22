@@ -7,7 +7,7 @@ package co.code4j.springframework.beans.factory.config;
  * @date 2022/8/22
  * @blog <a href="https://code4j.co">https://code4j.co</a>
  */
-public interface SingletonRegistry {
+public interface SingletonBeanRegistry {
 
     /**
      * 根据名称获取单例对象

@@ -2,7 +2,7 @@ package co.code4j.springframework.beans.factory.support;
 
 import static co.code4j.springframework.utils.ObjectUtils.*;
 
-import co.code4j.springframework.beans.factory.config.SingletonRegistry;
+import co.code4j.springframework.beans.factory.config.SingletonBeanRegistry;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @date 2022/8/22
  * @blog <a href="https://code4j.co">https://code4j.co</a>
  */
-public class DefaultSingletonRegistry implements SingletonRegistry {
+public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
 
     /** BeanName -> Singleton，存放单例对象 */
     private final Map<String, Object> singletonObjects = new ConcurrentHashMap<>();
