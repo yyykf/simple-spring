@@ -9,14 +9,14 @@ package co.code4j.springframework.beans.factory.config;
  */
 public class BeanDefinition {
 
-    /** 对应的 Bean  TODO 2022/8/17 16:13 yukaifan 后续会替换为目标类，而不是实际对象 */
-    private final Object bean;
+    /** 对应的 Bean 类 */
+    private final Class<?> beanClass;
 
-    public BeanDefinition(Object bean) {
-        this.bean = bean;
+    public BeanDefinition(Class<?> beanClass) {
+        this.beanClass = beanClass;
     }
 
-    public Object getBean() {
-        return bean;
+    public Class<?> getBeanClass() {
+        return beanClass;
     }
 }
