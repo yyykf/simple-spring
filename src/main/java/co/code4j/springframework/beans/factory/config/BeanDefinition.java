@@ -1,4 +1,4 @@
-package co.code4j.springframework.factory.config;
+package co.code4j.springframework.beans.factory.config;
 
 /**
  * Bean 定义
