@@ -20,4 +20,15 @@ public interface BeanFactory {
      * @throws BeansException 获取失败时抛出
      */
     Object getBean(String beanName) throws BeansException;
+
+    /**
+     * 根据名称获取Bean
+     *
+     * @param beanName bean名称
+     * @param args     构造函数入参
+     * @return Bean
+     *
+     * @throws BeansException 获取失败时抛出
+     */
+    Object getBean(String beanName, Object... args) throws BeansException;
 }

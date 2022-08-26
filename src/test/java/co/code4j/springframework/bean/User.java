@@ -7,8 +7,18 @@ package co.code4j.springframework.bean;
  */
 public class User {
 
-    private final int age = 18;
-    private final String name = "Code4j";
+    private final int age;
+    private final String name;
+
+    public User() {
+        this.age = 18;
+        this.name = "Code4j";
+    }
+
+    public User(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
 
     public int getAge() {
         return age;

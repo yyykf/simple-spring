@@ -36,4 +36,16 @@ public class MainTest {
         LOGGER.info("{}", user);
     }
 
+    @Test
+    void testInstantiate(){
+        DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
+        beanFactory.registerBeanDefinition("user", new BeanDefinition(User.class));
+
+        Object user = beanFactory.getBean("user", 24, "YuKf");
+        assertNotNull(user);
+        assertTrue(user instanceof User);
+
+        LOGGER.info("{}", user);
+    }
+
 }
